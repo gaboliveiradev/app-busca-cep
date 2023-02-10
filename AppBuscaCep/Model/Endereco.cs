@@ -4,7 +4,7 @@ using System.Text;
 
 namespace AppBuscaCep.Model
 {
-    internal class Endereco
+    public class Endereco
     {
     }
 }
