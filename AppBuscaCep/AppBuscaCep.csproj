@@ -16,6 +16,12 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="View\" />
+    <EmbeddedResource Update="View\modules\BairrosPorCidade\BairrosPorCidade.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="View\assets\" />
   </ItemGroup>
 </Project>
