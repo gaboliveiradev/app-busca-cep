@@ -16,5 +16,10 @@ namespace AppBuscaCep.View.modules.BairrosPorCidade
         {
             InitializeComponent();
         }
+
+        private void pck_estado_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
