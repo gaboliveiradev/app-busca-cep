@@ -21,5 +21,10 @@ namespace AppBuscaCep.View.modules.BairrosPorCidade
         {
 
         }
+
+        private void pck_cidade_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
