@@ -1,8 +1,7 @@
 ﻿using System;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
-using AppBuscaCep.View.modules;
-using AppBuscaCep.View.modules.BairrosPorCidade;
+using AppBuscaCep.View.modules.Menu;
 
 namespace AppBuscaCep
 {
@@ -12,7 +11,7 @@ namespace AppBuscaCep
         {
             InitializeComponent();
 
-            MainPage = new BairrosPorCidade();
+            MainPage = new NavigationPage(new View.modules.Menu.Menu());
         }
 
         protected override void OnStart()

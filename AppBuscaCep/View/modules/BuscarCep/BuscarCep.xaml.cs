@@ -7,19 +7,14 @@ using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-namespace AppBuscaCep.View.modules.Menu
+namespace AppBuscaCep.View.modules.BuscarCep
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class Menu : ContentPage
+    public partial class BuscarCep : ContentPage
     {
-        public Menu()
+        public BuscarCep()
         {
             InitializeComponent();
-        }
-
-        private void Button_Clicked(object sender, EventArgs e)
-        {
-            Navigation.PushAsync(new View.modules.BuscarCep.BuscarCep());
         }
     }
 }
