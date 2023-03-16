@@ -25,24 +25,18 @@
   </ItemGroup>
 
   <ItemGroup>
+    <EmbeddedResource Update="View\BuscaCepPorLogradouro.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="View\Menu.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
     <EmbeddedResource Update="View\modules\BairrosPorCidade\BairrosPorCidade.xaml">
-      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
-    </EmbeddedResource>
-    <EmbeddedResource Update="View\modules\BuscarCep\BuscaCep.xaml">
-      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
-    </EmbeddedResource>
-    <EmbeddedResource Update="View\modules\Menu\Menu.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
   </ItemGroup>
 
   <ItemGroup>
     <Folder Include="View\assets\" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Compile Update="View\modules\BuscarCep\BuscaCep.xaml.cs">
-      <DependentUpon>BuscaCep.xaml</DependentUpon>
-    </Compile>
   </ItemGroup>
 </Project>

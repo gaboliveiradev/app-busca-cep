@@ -1,7 +1,6 @@
 ﻿using System;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
-using AppBuscaCep.View.modules.Menu;
 
 namespace AppBuscaCep
 {
@@ -11,7 +10,7 @@ namespace AppBuscaCep
         {
             InitializeComponent();
 
-            MainPage = new NavigationPage(new View.modules.Menu.Menu());
+            MainPage = new NavigationPage(new View.Menu());
         }
 
         protected override void OnStart()

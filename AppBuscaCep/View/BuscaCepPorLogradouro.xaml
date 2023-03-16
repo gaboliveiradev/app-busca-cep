@@ -1,13 +1,15 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="AppBuscaCep.View.modules.BuscarCep.BuscarCep">
-    <ContentPage.Content>
+             x:Class="AppBuscaCep.View.BuscaCepPorLogradouro">
+  <ContentPage.Content>
         <StackLayout>
             <StackLayout Orientation="Horizontal">
                 <SearchBar x:Name="txt_logradouro" Placeholder="Qual é a rua?"/>
-                <Button Text="Buscar" />
+                <Button Text="Buscar" Clicked="Button_Clicked"/>
             </StackLayout>
+
+            <ActivityIndicator x:Name="loader" IsRunning="false" />
 
             <ListView x:Name="lst_ceps">
                 <ListView.Header>
@@ -23,10 +25,10 @@
                     <DataTemplate>
                         <ViewCell>
                             <Grid ColumnDefinitions="Auto, *, *, Auto" RowDefinitions="Auto">
-                                <Label Grid.Row="0" Grid.Column="0" Text="{Binding CEP}"/>
-                                <Label Grid.Row="0" Grid.Column="1" Text="{Binding descricao_logradouro}" />
+                                <Label Grid.Row="0" Grid.Column="0" Text="{Binding cep}"/>
+                                <Label Grid.Row="0" Grid.Column="1" Text="{Binding descricao}" />
                                 <Label Grid.Row="0" Grid.Column="2" Text="{Binding descricao_cidade}" />
-                                <Label Grid.Row="0" Grid.Column="3" Text="{Binding UF}" />
+                                <Label Grid.Row="0" Grid.Column="3" Text="{Binding uf}" />
                             </Grid>
                         </ViewCell>
                     </DataTemplate>
@@ -34,5 +36,5 @@
             </ListView>
 
         </StackLayout>
-    </ContentPage.Content>
+  </ContentPage.Content>
 </ContentPage>
