@@ -11,6 +11,12 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="View\assets\**" />
+    <EmbeddedResource Remove="View\assets\**" />
+    <None Remove="View\assets\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Compile Remove="MainPage.xaml.cs" />
   </ItemGroup>
 
@@ -25,18 +31,14 @@
   </ItemGroup>
 
   <ItemGroup>
+    <EmbeddedResource Update="View\BuscaBairroPorCidades.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
     <EmbeddedResource Update="View\BuscaCepPorLogradouro.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="View\Menu.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="View\modules\BairrosPorCidade\BairrosPorCidade.xaml">
-      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
-    </EmbeddedResource>
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="View\assets\" />
   </ItemGroup>
 </Project>

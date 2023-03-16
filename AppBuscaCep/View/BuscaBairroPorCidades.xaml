@@ -15,7 +15,7 @@
 
                     <Picker x:Name="pck_cidade" 
                             SelectedIndexChanged="pck_cidade_SelectedIndexChanged" 
-                            ItemDisplayBinding="{Binding descricao}" Title="Selecione a Cidade">
+                            ItemDisplayBinding="{Binding id_cidade}" Title="Selecione a Cidade">
                     </Picker>
                 </StackLayout>
 
