@@ -10,9 +10,9 @@ using Xamarin.Forms.Xaml;
 namespace AppBuscaCep.View.modules.BuscarCep
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class BuscarCep : ContentPage
+    public partial class BuscaCep1 : ContentView
     {
-        public BuscarCep()
+        public BuscaCep1()
         {
             InitializeComponent();
         }
