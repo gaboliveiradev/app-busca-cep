@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppBuscaCep.View.BuscaCidadePorEstado">
+    <ContentPage.Content>
+        <AbsoluteLayout HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+            <StackLayout>
+                <StackLayout Orientation="Horizontal">
+                    <Grid RowDefinitions="*, *, auto" >
+                        <Picker Grid.Row="0" x:Name="pck_estado" SelectedIndexChanged="pck_estado_SelectedIndexChanged" Title="Selecione o Estado:">
+                            <Picker.Items>
+                                <x:String>SP</x:String>
+                                <x:String>MG</x:String>
+                            </Picker.Items>
+                        </Picker>
+
+                        <ActivityIndicator x:Name="load" />
+
+                        <ListView Grid.Row="1" x:Name="lst_cidades">
+                            <ListView.Header>
+                                <StackLayout>
+                                    <Label Text="Nome da Cidade:"/>
+                                </StackLayout>
+                            </ListView.Header>
+                            <ListView.ItemTemplate>
+                                <DataTemplate>
+                                    <ViewCell>
+                                        <StackLayout>
+                                            <Label Text="{Binding descricao}"/>
+                                        </StackLayout>
+                                    </ViewCell>
+                                </DataTemplate>
+                            </ListView.ItemTemplate>
+                        </ListView>
+
+                    </Grid>
+                </StackLayout>
+            </StackLayout>
+        </AbsoluteLayout>
+    </ContentPage.Content>
+</ContentPage>

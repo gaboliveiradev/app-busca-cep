@@ -15,9 +15,11 @@
 
                     <Picker x:Name="pck_cidade" 
                             SelectedIndexChanged="pck_cidade_SelectedIndexChanged" 
-                            ItemDisplayBinding="{Binding id_cidade}" Title="Selecione a Cidade">
+                            ItemDisplayBinding="{Binding descricao}" Title="Selecione a Cidade">
                     </Picker>
                 </StackLayout>
+
+                <ActivityIndicator x:Name="load" />
 
                 <ListView x:Name="lst_bairros">
                     <ListView.Header>
